@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
@@ -46,11 +44,18 @@ public class PlayerController : MonoBehaviour {
         plane.SetThrottleInput(context.ReadValue<float>());
     }
 
-    public void OnRollPitchInput(InputAction.CallbackContext context) {
+    public void OnPitchInput(InputAction.CallbackContext context) {
         if (plane == null) return;
 
-        var input = context.ReadValue<Vector2>();
-        controlInput = new Vector3(input.y, controlInput.y, -input.x);
+        var input = context.ReadValue<float>();
+        controlInput = new Vector3(input, controlInput.y, -controlInput.z);
+    }
+    
+    public void OnRollInput(InputAction.CallbackContext context) {
+        if (plane == null) return;
+
+        var input = context.ReadValue<float>();
+        controlInput = new Vector3(controlInput.x, controlInput.y, input);
     }
 
     public void OnYawInput(InputAction.CallbackContext context) {

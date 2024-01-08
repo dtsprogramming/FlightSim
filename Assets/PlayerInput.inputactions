@@ -11,7 +11,8 @@
                     "id": "a601469b-e3aa-422a-806a-4f7dcba55332",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Throttle",
@@ -19,15 +20,26 @@
                     "id": "0d46f8f2-2f6f-4fe2-8623-427c869c3bde",
                     "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
-                    "name": "RollPitch",
+                    "name": "Pitch",
                     "type": "Value",
                     "id": "7173b259-7215-456e-ba7f-dba1aaad27e1",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll",
+                    "type": "Value",
+                    "id": "5378689b-40a8-4452-8b52-e1216638419a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Yaw",
@@ -35,7 +47,8 @@
                     "id": "56c160cd-3545-4284-abef-8d6eb62ab74c",
                     "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Camera",
@@ -43,7 +56,8 @@
                     "id": "cdd2542b-3da6-4431-be9c-bbf306e4dcd5",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "ToggleFlaps",
@@ -51,7 +65,8 @@
                     "id": "0e572958-b17b-4a43-950d-d9a9324fbc89",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "FireMissile",
@@ -59,7 +74,8 @@
                     "id": "54bc0053-bbe2-45cd-80b6-dd2a4f0dee6d",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "FireCannon",
@@ -67,7 +83,8 @@
                     "id": "cc901d01-643f-4c28-918b-23ed83f6433c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ToggleAI",
@@ -75,7 +92,8 @@
                     "id": "b0d256fa-cc8c-4a22-925d-479ad7049947",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -93,7 +111,7 @@
                 {
                     "name": "negative",
                     "id": "db898ab6-62ed-46c8-aa8c-185c8d579b9d",
-                    "path": "<Gamepad>/leftShoulder",
+                    "path": "<Mouse>/scroll/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -104,24 +122,13 @@
                 {
                     "name": "positive",
                     "id": "576b7d67-9a4c-42d1-be0c-aa52f335341a",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "<Mouse>/scroll/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Throttle",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "9114f377-1c7f-4991-a591-b668ae086658",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RollPitch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 },
                 {
                     "name": "1D Axis",
@@ -137,7 +144,7 @@
                 {
                     "name": "negative",
                     "id": "9c73b4a5-cd71-42e9-a47b-fc94c0dc4536",
-                    "path": "<Gamepad>/leftTrigger",
+                    "path": "<Keyboard>/#(Q)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -148,7 +155,7 @@
                 {
                     "name": "positive",
                     "id": "4f8b04ef-9161-4bc7-8b96-20890e94362f",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Keyboard>/#(E)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -159,7 +166,7 @@
                 {
                     "name": "",
                     "id": "45163a0d-825d-4388-9771-5cc782697311",
-                    "path": "<Gamepad>/rightStick",
+                    "path": "*/{Primary2DMotion}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -170,7 +177,7 @@
                 {
                     "name": "",
                     "id": "8b4e38a0-f793-4d60-bcda-53f58cf07745",
-                    "path": "<Gamepad>/dpad/down",
+                    "path": "<Keyboard>/#(F)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -192,7 +199,7 @@
                 {
                     "name": "",
                     "id": "c854cd2e-491a-4639-9836-296333fced16",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -203,7 +210,7 @@
                 {
                     "name": "",
                     "id": "f8cd153b-2c78-4690-b96d-88366b14cb64",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -221,6 +228,72 @@
                     "action": "ToggleAI",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "f8b716d8-c9be-4818-b2c4-df2f8533734c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "3a8d3bc8-9056-4542-aac6-7d490fe74a27",
+                    "path": "<Keyboard>/#(W)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "67e92f5e-66fb-4ea7-8592-72951c39b171",
+                    "path": "<Keyboard>/#(S)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "7c60b092-b5a6-4cb2-a8b9-3ff1d05cf0e8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "effc6adc-2e12-4305-9031-6f7920f09664",
+                    "path": "<Keyboard>/#(A)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "ea9cb793-e5c5-4a20-84d3-4dab9eaf291b",
+                    "path": "<Keyboard>/#(D)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
